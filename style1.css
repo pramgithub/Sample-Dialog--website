@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+#p1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+    color: gray;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    position: relative; /* Add relative positioning to the container for absolute positioning of text and link */
+}
+
+.image-container {
+    position: relative;
+    width: 30%; /* Set the width of the container */
+    margin: 0 5px; /* Add some space between images */
+}
+
+.images img {
+    width: 100%; /* Set the width of the image */
+    height: auto; /* Let the height adjust proportionally */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative; /* Add relative positioning to allow absolute positioning of text and link */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.image-text {
+    color: white;
+    font-size: 30px;
+    margin: 20px 0 10px;
+    max-width: 80%;
+    display: block; /* Show the text always */
+}
+
+.learn-more {
+    color: white;
+    text-decoration: none; /* Remove underline by default */
+    background-color: transparent; /* Remove background color */
+    padding: 5px 0; /* Adjust padding */
+    border: none; /* Remove border */
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.learn-more:hover {
+    text-decoration: underline; /* Underline "Learn More" link on hover */
+}
+
+/* Button styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.view-profile-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 0 0 0 1px grey; /* Add black margin */
+    color: palevioletred;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+.view-profile-button:hover {
+    background-color: plum;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar a:hover {
+    color: purple; /* Change color to purple on hover */
+    background-color:black;
+}
+
+
+
+
+
+.navbar .logo img {
+    width: 100px; /* Adjust the width of the logo */
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-input {
+    padding: 10px;
+    padding-right: 40px; /* Adjust as per the width of the search icon */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: black;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: gray;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.section-image img {
+max-width: 100%; /* Ensure the image fits within its container */
+height: auto; /* Allow the height to adjust proportionally */
+
+}
+
+
+.button-section {
+    padding: 20px;
+    background-color: #f5f5f5; /* Background color for the section */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly; /* Center-align the buttons */
+    align-items: center;
+    margin-top: 20px; 
+
+}
+
+.image-button {
+    width: 150px; /* Set the width of each button */
+    height: 150px; /* Set the height of each button */
+    background-color: #ffffff; /* Button background color */
+    border: 1px solid #ccc; /* Button border */
+    border-radius: 50px; /* Button border radius */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s ease; /* Add transition effect */
+    
+}
+
+.image-button img {
+    width: 100%; /* Make the image fill the button */
+    height: 100%; /* Make the image fill the button */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
+
+
